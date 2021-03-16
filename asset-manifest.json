@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/dice-roller/static/css/main.c648201f.chunk.css",
+    "main.js": "/dice-roller/static/js/main.f07a5c1a.chunk.js",
+    "main.js.map": "/dice-roller/static/js/main.f07a5c1a.chunk.js.map",
+    "runtime-main.js": "/dice-roller/static/js/runtime-main.1d6721f1.js",
+    "runtime-main.js.map": "/dice-roller/static/js/runtime-main.1d6721f1.js.map",
+    "static/js/2.2bd80c57.chunk.js": "/dice-roller/static/js/2.2bd80c57.chunk.js",
+    "static/js/2.2bd80c57.chunk.js.map": "/dice-roller/static/js/2.2bd80c57.chunk.js.map",
+    "index.html": "/dice-roller/index.html",
+    "static/css/main.c648201f.chunk.css.map": "/dice-roller/static/css/main.c648201f.chunk.css.map",
+    "static/js/2.2bd80c57.chunk.js.LICENSE.txt": "/dice-roller/static/js/2.2bd80c57.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d6721f1.js",
+    "static/js/2.2bd80c57.chunk.js",
+    "static/css/main.c648201f.chunk.css",
+    "static/js/main.f07a5c1a.chunk.js"
+  ]
+}
