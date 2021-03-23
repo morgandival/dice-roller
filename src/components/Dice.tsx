@@ -1,25 +1,37 @@
-import React from "react";
-import "./Dice.css";
+import React from 'react';
+import './Dice.css';
 
 function Dice() {
-  // Declare states for dice and result
+  // Declare states for dice, random result, and previous rolls
   const [dice, setDice] = React.useState(20);
   const [random, setRandom] = React.useState(0);
+  const [history, setHistory] = React.useState<object[]>([]);
 
   // Handles what happens when the Roll button is clicked
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    // prevent default submit action
+    // Prevent default submit action
     event.preventDefault();
-    // roll the dice
+
+    // Roll the dice
     setRandom(Math.floor(Math.random() * dice) + 1);
+
+    // Add result to history array
+    setHistory([{ random, dice }, ...history]);
+
+    console.log(`History items: ${history.length}`);
+
+    // Error checking
+    if (history.length > 0) {
+      console.log(history);
+    } else {
+      console.log(`No history items to display!`);
+    }
   };
 
   // Handles what happens when the select option is changed
   const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    // get value of select option and parse as integer
-    let x = parseInt(event.target.value);
-    // set value of dice
-    setDice(x);
+    // Get value of select option, parse as integer, set dice value
+    setDice(parseInt(event.target.value));
   };
 
   return (
@@ -39,6 +51,7 @@ function Dice() {
       <p>
         You rolled: <span className="result">{random}</span>
       </p>
+      <h4>Roll History</h4>
     </div>
   );
 }
