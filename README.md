@@ -22,4 +22,10 @@ Currently supported dice:
 
 ## Possible Future Upgrades:
 
-- [ ] Roll logging and reset
+**Planned:**
+
+- [ ] Better styling
+
+**Completed:**
+
+- [x] Roll logging and reset
