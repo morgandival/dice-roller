@@ -1,5 +1,78 @@
 .dice {
   border: black solid 0.1em;
+  border-radius: 0.5em;
+  padding: 1em;
+  text-align: left;
   margin: 2em auto;
   width: 20vw;
+}
+
+form {
+  padding: 1em;
+  text-align: center;
+}
+
+form select {
+  font-size: 1.2em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+form button {
+  background-color: #114f88;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0.5em;
+  padding: 0.5em 1.2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+form p {
+  margin-top: 1em;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 1em;
+  text-align: left;
+}
+
+.results-title {
+  font-size: 1.2em;
+  justify-self: start;
+  padding: 0.2em 0 0.2em 0;
+  text-align: left;
+}
+
+.results-reset {
+  justify-self: end;
+}
+
+.results-reset button {
+  background-color: #114f88;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 0.2em 0.4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.results-items {
+  clear: both;
+  grid-column: 1 / 3;
+  padding-top: 0.2em;
+}
+
+.results ol {
+  display: block;
+}
+
+.results li {
+  list-style-position: inside;
 }
