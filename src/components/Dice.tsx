@@ -66,6 +66,7 @@ function Dice() {
   return (
     <div className="dice">
       <form onSubmit={handleSubmit}>
+        <h2>Dice Roller</h2>
         <select onChange={handleSelect}>
           <option value="20">d20</option>
           <option value="12">d12</option>

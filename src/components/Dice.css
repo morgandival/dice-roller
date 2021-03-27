@@ -3,7 +3,8 @@
   border-radius: 0.5em;
   padding: 1em;
   text-align: left;
-  margin: 2em auto;
+  margin: 1em auto;
+  width: 20em;
 }
 
 form {
@@ -18,7 +19,7 @@ form select {
 }
 
 form button {
-  background-color: #114f88;
+  background-color: #083d77;
   border: none;
   color: #ffffff;
   display: inline-block;
@@ -52,7 +53,7 @@ form p {
 }
 
 .results-reset button {
-  background-color: #114f88;
+  background-color: #083d77;
   border: none;
   color: #ffffff;
   display: inline-block;
