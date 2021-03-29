@@ -7,12 +7,14 @@ interface Roll {
   dice: number;
 }
 
+// The actual dice roll wizardry
 function rollDice(die: number) {
   return Math.floor(Math.random() * die) + 1;
 }
 
+// Functional Component 'Dice'
 function Dice() {
-  // Declare states for dice, random result, and previous rolls
+  // Declare states for dice: number, random: number, and roll history (array of interface Roll)
   const [dice, setDice] = React.useState(20);
   const [random, setRandom] = React.useState(0);
   const [history, setHistory] = React.useState<Roll[]>([]);
