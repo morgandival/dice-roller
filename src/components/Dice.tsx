@@ -7,6 +7,10 @@ interface Roll {
   dice: number;
 }
 
+function rollDice(die: number) {
+  return Math.floor(Math.random() * die) + 1;
+}
+
 function Dice() {
   // Declare states for dice, random result, and previous rolls
   const [dice, setDice] = React.useState(20);
@@ -19,7 +23,7 @@ function Dice() {
     event.preventDefault();
 
     // Roll the dice
-    setRandom(Math.floor(Math.random() * dice) + 1);
+    setRandom(rollDice(dice));
 
     // Add result to history array
     setHistory([{ random, dice }, ...history]);
