@@ -69,19 +69,25 @@ function Dice() {
     }
   });
 
+  const DiceSelector = (): JSX.Element => {
+    return (
+      <select onChange={handleSelect}>
+        <option value="20">d20</option>
+        <option value="12">d12</option>
+        <option value="10">d10</option>
+        <option value="8">d8</option>
+        <option value="6">d6</option>
+        <option value="4">d4</option>
+        <option value="100">d100</option>
+      </select>
+    );
+  };
+
   return (
     <div className="dice">
       <form onSubmit={handleSubmit}>
         <h2>Dice Roller</h2>
-        <select onChange={handleSelect}>
-          <option value="20">d20</option>
-          <option value="12">d12</option>
-          <option value="10">d10</option>
-          <option value="8">d8</option>
-          <option value="6">d6</option>
-          <option value="4">d4</option>
-          <option value="100">d100</option>
-        </select>
+        <DiceSelector />
         <button>Roll!</button>
         <p>
           You rolled:{' '}
