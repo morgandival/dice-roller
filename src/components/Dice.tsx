@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Dice.css';
 
 // Define what a dice roll should look like to the history array
@@ -15,9 +15,9 @@ function rollDice(die: number) {
 // Functional Component 'Dice'
 function Dice() {
   // Declare states for dice: number, random: number, and roll history (array of interface Roll)
-  const [dice, setDice] = React.useState(20);
-  const [random, setRandom] = React.useState(0);
-  const [history, setHistory] = React.useState<Roll[]>([]);
+  const [dice, setDice] = useState(20);
+  const [random, setRandom] = useState(0);
+  const [history, setHistory] = useState<Roll[]>([]);
 
   // Handles what happens when the Roll button is clicked
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
