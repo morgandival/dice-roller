@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Dice.css';
 
 // Define what a dice roll should look like to the history array
-interface Roll {
+type Roll {
   random: number;
   dice: number;
 }
